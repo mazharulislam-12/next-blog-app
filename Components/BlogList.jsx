@@ -47,6 +47,7 @@ const BlogList = () => {
                 {filteredData.map((item) => (
                     <BlogItem 
                         key={item.id} 
+                        id={item.id}
                         image={item.image} 
                         title={item.title} 
                         description={item.description} 
