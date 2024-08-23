@@ -7,7 +7,7 @@ const BlogItem = ({ title, description, category, image, id }) => {
         <div className="bg-white border border-black hover:shadow-lg rounded-lg overflow-hidden flex flex-col">
             <div className="relative w-full h-64">
                 <Link href={`/blogs/${id}`}>
-                    <Image src={image} alt={title || 'Blog image'} width={400} height={400} className="border-b border-black " />
+                    <Image src={image} alt={title || 'Blog image'} width={400} height={400} className="border-b border-black" />
                 </Link>
             </div>
             <div className="p-4 flex-1">
@@ -17,7 +17,7 @@ const BlogItem = ({ title, description, category, image, id }) => {
             </div>
             <div className="px-4 pb-4">
                 <Link href={`/blogs/${id}`} className="inline-flex items-center py-2 font-semibold text-center">
-                    Read more <Image src={assets.arrow} alt="arrow icon" width={12} className="ml-2" />
+                    Read more <Image src={assets.arrow} alt="arrow icon" width={12} height={12} className="ml-2" />
                 </Link>
             </div>
         </div>
